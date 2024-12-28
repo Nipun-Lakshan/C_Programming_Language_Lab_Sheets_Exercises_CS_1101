@@ -45,7 +45,7 @@ int main()
             max = num3;
         }
 
-        printf("\nThe largest number from %.2f, %.2f, and %.2f is %.2f.\n", num1, num2, num3, max);
+        printf("\nThe largest number from %.2f, %.2f and %.2f is %.2f.\n", num1, num2, num3, max);
     }
 
     return 0;

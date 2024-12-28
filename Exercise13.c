@@ -20,7 +20,7 @@ int main()
     scanf("%f", &amount_in_lkr);
 
     // Calculate the USD Value
-    one_usd_in_lkr = 330;
+    one_usd_in_lkr = 298;
     amount_in_usd = amount_in_lkr / one_usd_in_lkr;
 
     // Print the Result
