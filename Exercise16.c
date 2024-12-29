@@ -46,6 +46,7 @@ label3:
 
     // Calculate the Total and Print Grade
     total_result = (t1_result + t2_result + t3_result);
+    printf("\nTotal : %d", total_result);
     (total_result > 225) ? printf("\nGrade : Satisfied\n") : printf("\nGrade : Unsatisfied\n");
 
     return 0;
