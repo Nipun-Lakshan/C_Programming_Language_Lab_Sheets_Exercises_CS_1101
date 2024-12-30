@@ -1,4 +1,4 @@
-// Variable in C (Supplementary Worksheet Week 01 - Question 21)
+// Variable in C (Supplementary Worksheet Week 01 - Question 22)
 
 #include <stdio.h>
 int main()
