@@ -35,11 +35,12 @@ int main()
     }
 
     // Analyze the Numbers
-    for (i = 0; i < 99; i++)
+    largest = numbers[0];
+    for (i = 1; i < 100; i++)
     {
-        if (numbers[i] < numbers[i + 1])
+        if (largest < numbers[i])
         {
-            largest = numbers[i + 1];
+            largest = numbers[i];
         }
     }
     printf("\nLargest Number : %d\n", largest);

@@ -1,48 +1,43 @@
-// Flowcharts (Worksheet Week 01 - Question 07)
+// Flowcharts (Worksheet Week 01 - Question 08)
 
 #include <stdio.h>
 
 int main()
 {
     // Variable Declaration
-    int i; // Loop Index
-    int largest;
+    long long i; // Loop Index
+    long long end_point;
+    long long sum = 0;
 
     // Header String Formatting
-    printf("\n==============");
-    printf("\nLargest Number");
-    printf("\n==============\n\n");
+    printf("\n==================================");
+    printf("\nSum of Even Numbers Within a Range");
+    printf("\n==================================\n\n");
 
-    // Declaration of an Array
-    int numbers[100];
-
-    // Request Input From User
-    for (i = 0; i < 100; i++)
+    // Request the End Point of the Range
+    while (1)
     {
-        if (i < 9)
+        printf("Enter the end point : ");
+        scanf("%lld", &end_point);
+        if (end_point < 1)
         {
-            printf("Enter Number  0%d : ", (i + 1));
-        }
-        else if (i < 99)
-        {
-            printf("Enter Number  %d : ", (i + 1));
+            printf("Invalid input! Please enter a value greater than 0.\n\n");
         }
         else
         {
-            printf("Enter Number %d : ", (i + 1));
+            break;
         }
-        scanf("%d", &numbers[i]);
     }
 
-    // Analyze the Numbers
-    for (i = 0; i < 99; i++)
+    // Calculate the Sum of Even Numbers
+    for (i = 0; i <= end_point; i++)
     {
-        if (numbers[i] < numbers[i + 1])
+        if (i % 2 == 0)
         {
-            largest = numbers[i + 1];
+            sum += i;
         }
     }
-    printf("\nLargest Number : %d\n", largest);
+    printf("Sum of all even numbers from 0 to %lld : %lld\n", end_point, sum);
 
     return 0;
 }
