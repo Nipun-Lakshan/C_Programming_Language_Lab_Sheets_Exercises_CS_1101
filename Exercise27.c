@@ -1,4 +1,4 @@
-// Variable in C (Supplementary Worksheet Week 01 - Question 22)
+// Variables in C (Supplementary Worksheet Week 01 - Question 22)
 
 #define _USE_MATH_DEFINES
 #include <stdio.h>

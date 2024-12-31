@@ -1,4 +1,4 @@
-// Variable in C (Supplementary Worksheet Week 01 - Question 23)
+// Variables in C (Supplementary Worksheet Week 01 - Question 23)
 
 #include <stdio.h>
 
