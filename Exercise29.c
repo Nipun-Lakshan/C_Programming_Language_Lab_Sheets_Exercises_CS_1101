@@ -4,9 +4,15 @@
 
 int main()
 {
-    // Variable Declaration
+    // Variable Declarations
+    float a = 11.2;
+    float b = 2.2;
 
-    // Request Input From User
+    // Calculations & Print Results
+    printf("\n%.2f + %.2f = %.2f", a, b, (a + b));
+    printf("\n%.2f - %.2f = %.2f", a, b, (a - b));
+    printf("\n%.2f * %.2f = %.2f", a, b, (a * b));
+    printf("\n%.2f / %.2f = %.2f\n", a, b, (a / b));
 
     return 0;
 }
