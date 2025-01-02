@@ -10,6 +10,7 @@ int main()
     float pi = 3.14;
     double value = 1.2345678900;
 
+    // Print Result
     printf("\n");
     printf("Number   : %hd\n", number);
     printf("Letter   : %c\n", letter);

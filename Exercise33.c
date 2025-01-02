@@ -1,4 +1,4 @@
-// Declaring Variables and Format Specifiers (Supplementary Worksheet Week 01 - Question 27)
+// Declaring Variables and Format Specifiers (Supplementary Worksheet Week 01 - Question 28)
 
 #include <stdio.h>
 
