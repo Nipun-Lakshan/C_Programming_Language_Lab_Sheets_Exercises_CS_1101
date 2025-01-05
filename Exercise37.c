@@ -14,7 +14,7 @@ int main()
     double width = 5.345;
     double perimeter;
 
-    // Calculate the area
+    // Calculate the perimeter
     perimeter = 2 * (length + width);
 
     // Print the Result
