@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 // Function to display user details
-int displayUser(float userNo)
+char displayUser(float userNo)
 {
 
     if (userNo == 1 && (userNo - 1.0) == 0)
@@ -17,7 +17,7 @@ int displayUser(float userNo)
         printf("Name     : W.M.M.A. Thevindhu Gimantha\n");
         printf("Email    : gimantha@gmail.com\n");
         printf("LinkedIn : https://www.linkedin.com/in/thevindhu-gimantha\n\n");
-        return 1;
+        return '1';
     }
 
     else if (userNo == 2 && (userNo - 2.0) == 0)
@@ -31,13 +31,13 @@ int displayUser(float userNo)
         printf("Name     : N.M. Vikum Deshapriya\n");
         printf("Email    : vikum@gmail.com\n");
         printf("LinkedIn : https://www.linkedin.com/in/vikum-deshapriya\n\n");
-        return 1;
+        return '1';
     }
 
     else
     {
         printf("Invalid user number! Please try again.\n");
-        return 0;
+        return '0';
     }
 }
 
@@ -46,7 +46,7 @@ int main()
 {
     // Variable Declaration
     float userNo;
-    int feed;
+    char feed;
 
     // Header String Formatting
     printf("\n====================");
@@ -60,8 +60,8 @@ int main()
     // Display The Details
     feed = displayUser(userNo);
 
-    // Check Whther Job Done
-    if (feed == 1)
+    // Check Whether Job Done
+    if (feed == '1')
     {
         printf("User details displayed successfully.\n");
     }
