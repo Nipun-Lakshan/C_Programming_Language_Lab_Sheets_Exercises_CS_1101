@@ -1,10 +1,19 @@
-// CS 1101 - Functions Worksheet - Question 01 - Part a
+// CS 1101 - Functions Worksheet - Question 01 - Part b
 
 #include <stdio.h>
 #include <string.h>
 
+void displayUser(void); // Function to Get Name, Email & LinkedIn Link and Print them.
+
 int main()
 
+{
+    // Call for the Function
+    displayUser();
+    return 0;
+}
+
+void displayUser(void)
 {
     // Variable Declaration
     char data[3][100]; // Store Name, Email Address & LinkedIn Link
@@ -56,6 +65,4 @@ int main()
     printf("Name     : %s\n", data[0]);
     printf("Email    : %s\n", data[1]);
     printf("LinkedIn : %s\n", data[2]);
-
-    return 0;
 }
