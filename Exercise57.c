@@ -39,6 +39,7 @@ int main()
     return 0;
 }
 
+// Function with Bitwise Operator
 char isEven(int num)
 {
     if ((num & 1) == 0)
