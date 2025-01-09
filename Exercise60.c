@@ -5,12 +5,14 @@
 
 // Function Declaration
 int findTermValue(float user_input);
+int sumOfTerms();
 
 int main()
 {
     // Variable Declaration
     float user_input;
     long long term;
+    long long sum;
 
     // Header String Formatting
     printf("\n==========================================");
@@ -37,11 +39,15 @@ int main()
         return 1; // Check Whether It is an Integer
     }
 
-    // Calculate the Value of The Term Entered By The User
+    // Calculate the Value of The Term Entered by The User
     term = findTermValue(user_input);
 
-    // Print The Result
+    // Calculate the Sum upto N
+    sum = sumOfTerms((int)user_input);
+
+    // Print The Results
     printf("The Value of the %dth Term : %lld\n", (int)user_input, term);
+    printf("The Sum of Terms upto %d : %lld\n", (int)user_input, sum);
 
     return 0;
 }
@@ -50,4 +56,20 @@ int main()
 int findTermValue(float user_input)
 {
     return (COMMON_DIFFERENCE * ((int)(user_input)-1));
+}
+
+// Function to Calculate Total from 1 to N
+int sumOfTerms(int user_input)
+{
+    // Variable Declaration
+    long long i;
+    long long sum = 0;
+
+    // Calculate the Sum
+    for (i = 0; i < user_input; i++)
+    {
+        sum += findTermValue((i + 1));
+    }
+
+    return sum;
 }
