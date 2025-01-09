@@ -1,7 +1,10 @@
-// CS 1101 - Functions Worksheet - Question 04 - Part a
+// CS 1101 - Functions Worksheet - Question 04 - Part c
 
 #include <stdio.h>
 #define COMMON_DIFFERENCE 5
+
+// Function Declaration
+int findTermValue(float user_input);
 
 int main()
 {
@@ -35,10 +38,16 @@ int main()
     }
 
     // Calculate the Value of The Term Entered By The User
-    term = (COMMON_DIFFERENCE * ((int)(user_input)-1));
+    term = findTermValue(user_input);
 
     // Print The Result
     printf("The Value of the %dth Term : %lld\n", (int)user_input, term);
 
     return 0;
+}
+
+// Function to Calculate Term
+int findTermValue(float user_input)
+{
+    return (COMMON_DIFFERENCE * ((int)(user_input)-1));
 }
